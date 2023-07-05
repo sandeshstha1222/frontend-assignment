@@ -1,0 +1,80 @@
+body {
+  background-color: aliceblue;
+}
+
+.SearchBar {
+  display: flex;
+  justify-content: center;
+  top: 10%;
+}
+.SearchBar .Search {
+  display: flex;
+  align-items: center;
+  width: auto;
+  top: 5em;
+  height: auto;
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+}
+.search-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  justify-content: space-between;
+  gap: 2em;
+  border: 2px solid rgb(6, 121, 197);
+  border-radius: 5px;
+  margin: 8px;
+}
+.Search input {
+  border: none;
+  width: 40em;
+}
+.Search input:focus {
+  outline: none;
+}
+.Search .icons {
+  display: flex;
+  gap: 10px;
+}
+#search-icon {
+  size: 12em;
+}
+.SearchBar .overlay {
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  backdrop-filter: blur(5px);
+  background: grey;
+}
+
+.List-Part {
+  display: flex;
+  justify-content: center;
+}
+
+.Search .arrow,
+.Navigation-Part .icons p {
+  border: 1px solid rgb(210, 210, 210);
+  background-color: rgb(234, 232, 232);
+  border-radius: 2px;
+  search-shadow: 4px;
+  padding: 2px 6px;
+}
+.Navigation-Part {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  margin-left: 8px;
+  bottom: 8px;
+}
+.Navigation-Part .icons {
+  display: flex;
+  align-items: center;
+}
