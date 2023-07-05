@@ -15,6 +15,7 @@ code {
 }
 
 .btn {
+  height: 3.3em;
   color: #fff;
   background: rgb(6, 121, 197);
   border: 2px solid rgb(6, 121, 197);

@@ -1,19 +1,28 @@
 body {
   background-color: aliceblue;
 }
-
+.Products {
+  width: 100%;
+  height: auto;
+}
+.ecommerce-text {
+}
 .SearchBar {
+  /* width: 100%; */
   display: flex;
   justify-content: center;
-  top: 10%;
+  gap: 2em;
+  margin-top: 4em;
+  align-items: center;
+}
+.SearchBar p {
+  font-size: larger;
+  font-weight: bold;
 }
 .SearchBar .Search {
   display: flex;
   align-items: center;
-  width: auto;
-  top: 5em;
-  height: auto;
-  position: absolute;
+  height: fit-content;
   background-color: white;
   border-radius: 5px;
 }
@@ -39,42 +48,6 @@ body {
   display: flex;
   gap: 10px;
 }
-#search-icon {
-  size: 12em;
-}
-.SearchBar .overlay {
-  width: 100%;
-  height: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: fixed;
-  backdrop-filter: blur(5px);
-  background: grey;
-}
-
-.List-Part {
-  display: flex;
-  justify-content: center;
-}
-
-.Search .arrow,
-.Navigation-Part .icons p {
-  border: 1px solid rgb(210, 210, 210);
-  background-color: rgb(234, 232, 232);
-  border-radius: 2px;
-  search-shadow: 4px;
-  padding: 2px 6px;
-}
-.Navigation-Part {
-  display: flex;
-  gap: 2em;
-  align-items: center;
-  margin-left: 8px;
-  bottom: 8px;
-}
-.Navigation-Part .icons {
-  display: flex;
-  align-items: center;
+.hr {
+  /* margin-top: 2em; */
 }

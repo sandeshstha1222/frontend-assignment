@@ -5,7 +5,9 @@ const Navbar = () => {
     <div className="Navbar-body">
       <nav className="NavbarItems">
         <div>
-          <h1>OnlineStore</h1>
+          <h1>
+            <a style={{ color: "rgb(6, 121, 197)" }}>Online</a>Store
+          </h1>
         </div>
         <div className="nav-menu">
           <ul>

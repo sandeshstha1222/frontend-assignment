@@ -6,10 +6,6 @@
   left: 0;
   width: 100%;
 }
-.navbar-logo {
-  width: 100px;
-  height: 60px;
-}
 .NavbarItems {
   display: flex;
   justify-content: space-around;

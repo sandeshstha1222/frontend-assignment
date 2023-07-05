@@ -10,8 +10,14 @@ const Search = () => {
   const [input, setInput] = useState();
 
   return (
-    <div>
+    <div className="Products">
       <div className="SearchBar">
+        <div className="ecommerce-text">
+          <p>
+            <a style={{ fontSize: "25px", color: "rgb(6, 121, 197)" }}>e</a>
+            <a style={{ fontSize: "30px" }}>Commerce</a>
+          </p>
+        </div>
         <div className="Search">
           <div className="search-part">
             <div className="icons">
@@ -23,31 +29,14 @@ const Search = () => {
                 style={{ fontSize: "1em" }}
               />
             </div>
-            {/* <div className="icons">
-              <LuLayoutList />
-              <AiOutlineCloseSquare />
-            </div> */}
           </div>
           <div style={{ paddingRight: "8px" }}>
             <button className="btn">SEARCH</button>
           </div>
-
-          {/* <div className="Navigation-Part">
-            <div className="icons">
-              <BiUpArrowAlt className="arrow" />
-              <BiDownArrowAlt className="arrow" />
-              to navigate
-            </div>
-            <div className="icons"> 
-              <AiOutlineEnter className="arrow" />
-              to select
-            </div>
-            <div className="icons">
-              <p>esc</p> to close
-            </div>
-          </div> */}
         </div>
       </div>
+      <hr className="hr" />
+      <div className="Products-list">{map}</div>
     </div>
   );
 };
