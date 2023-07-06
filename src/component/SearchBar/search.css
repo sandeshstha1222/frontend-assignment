@@ -5,8 +5,7 @@ body {
   width: 100%;
   height: auto;
 }
-.ecommerce-text {
-}
+
 .SearchBar {
   /* width: 100%; */
   display: flex;
@@ -49,7 +48,7 @@ body {
   gap: 10px;
 }
 .hr {
-  /* margin-top: 2em; */
+  margin-top: 2em;
 }
 .Products-list p {
   font-family: "Source Sans Pro", sans-serif;
@@ -57,7 +56,7 @@ body {
 }
 .products-display {
   width: 15%;
-  height: 40vh;
+  height: 45vh;
   background: #fff;
   float: left;
   margin-left: 3.8em;
@@ -67,4 +66,99 @@ body {
   background-color: rgb(255, 255, 255);
   box-shadow: rgb(21, 21, 21);
   border: 1px solid rgb(229, 228, 228);
+  cursor: pointer;
+}
+
+/* productDetails popup */
+.productDetails .overlay {
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  backdrop-filter: blur(5px);
+  background: rgba(49, 49, 49, 0.8);
+}
+
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.productDetails .Product-content {
+  position: fixed;
+  width: 88%;
+  min-height: 80vh;
+  max-height: 100vh;
+  top: 10%;
+  left: 6%;
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 14px 28px;
+  border-radius: 3px;
+}
+
+.productDetails .btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+}
+.productDetails .Buy {
+  margin: 15px 0 0 0;
+  background-color: rgb(6, 121, 197);
+  border: 2px solid rgb(6, 121, 197);
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  font-family: "Bebas Neue";
+  font-size: 25px;
+}
+
+/***toogggggle buttton part***/
+.productDetails .three-bodies {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+.three-bodies .middle div {
+  text-align: "center";
+  border: "2px solid rgb(6, 121, 197)";
+  border-radius: "3px";
+}
+.three-bodies .middle div p {
+  background-color: rgb(6, 121, 197);
+  color: white;
+}
+.productDetails .input {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(6, 121, 197);
+  padding: 50px;
+}
+
+.productDetails input {
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid rgb(6, 121, 197);
+  color: rgb(65, 64, 64);
+  font-size: 15px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.productDetails input:focus {
+  outline: none;
+}
+
+.productDetails input::placeholder {
+  color: rgb(65, 64, 64);
+  opacity: 70%;
+  font-family: Arial, Helvetica, sans-serif;
+  /* padding-left:  10px; */
 }
